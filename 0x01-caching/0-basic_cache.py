@@ -6,8 +6,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 class BasicCache(BaseCaching):
     '''Basiccache module'''
-    
-    
+
     def __init__(self):
         """ Initiliaze
         """
@@ -15,7 +14,7 @@ class BasicCache(BaseCaching):
 
     def put(self, key, item):
         '''adds item to key'''
-        #super().put(key, item)
+        '''super().put(key, item)'''
         if key is None or item is None:
             return
 
@@ -23,7 +22,7 @@ class BasicCache(BaseCaching):
 
     def get(self, key):
         '''gets the value of a key'''
-        #super().get(key)
+        '''super().get(key)'''
         if key is None:
             return None
 
