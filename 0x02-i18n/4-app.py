@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''setup a basic Flask app'''
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_babel import Babel, _
 
 app = Flask(__name__)
@@ -9,7 +9,6 @@ babel = Babel(app)
 
 class Config:
     '''a class config'''
-
 
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
