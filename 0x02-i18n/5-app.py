@@ -17,6 +17,7 @@ class Config:
 
 app.config.from_object(Config)
 
+
 users = {
         1: {"name": "Balou", "locale": "fr", "timezone": "Europe/Paris"},
         2: {"name": "Beyonce", "locale": "en", "timezone": "US/Central"},
@@ -39,7 +40,7 @@ def get_user():
 @app.before_request
 def before_request():
     '''get user'''
-    g.user = get_user
+    g.user = get_user()
 
 
 @babel.localeselector
