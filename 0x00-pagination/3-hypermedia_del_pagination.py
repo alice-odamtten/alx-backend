@@ -1,7 +1,6 @@
-123456
 #!/usr/bin/env python3
 """
-Deletion-resilient hypermedia pagination
+Deletion-resilient of hypermedia pagination
 """
 
 import csv
@@ -10,8 +9,7 @@ from typing import List, Dict
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
-    """
+    """Server class to paginate a database """
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
