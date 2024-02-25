@@ -1,12 +1,11 @@
-123456
 #!/usr/bin/env python3
-"""module for the class LFUCache"""
+"""module for the LFUCache"""
 
 BaseCaching = __import__("base_caching").BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """A MRU caching system that inherits from BaseCaching."""
+    """A MRU caching system"""
 
     def __init__(self):
         """Initializes the cache"""
@@ -16,7 +15,6 @@ class LFUCache(BaseCaching):
     def put(self, key, item):
         """
         Adds an item to the cache.
-        When cache is full, discards in LFU
         """
         if key and item:
             if self.get(key) != item:
